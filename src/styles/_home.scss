@@ -1,0 +1,36 @@
+@import "src/styles/variables";
+
+.home {
+  &__header {
+    height: 123px;
+    background-color: #1a2228;
+
+    &__container {
+      position: relative;
+
+      &__logo {
+        padding-left: 0;
+        margin-top: 13px;
+        width: auto;
+        top: 6px;
+        left: 0;
+        position: absolute;
+        z-index: 100;
+
+        &__title {
+          font-family: 'Droid Sans', sans-serif;
+          background: transparent url(http://www.bc211.ca/wp-content/uploads/2017/03/bc211_logo_small.png) no-repeat 0 100%;
+          width: 260px;
+          height: 81px;
+          color: #3c6787;
+          font-weight: bold;
+          text-decoration: none;
+          display: block;
+          text-indent: -5000px;
+          overflow: hidden;
+          outline: 0;
+        }
+      }
+    }
+  }
+}
