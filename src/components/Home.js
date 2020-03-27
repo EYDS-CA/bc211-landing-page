@@ -6,13 +6,13 @@ const Home = () => (
     <div className="home__header">
       <div className="home__header__container container">
         <div className="home__header__container__logo">
-          <a
+          <Link
             className="home__header__container__logo__title"
             title="bc211"
-            href="http://www.bc211.ca"
+            to="http://www.bc211.ca"
           >
             bc211
-          </a>
+          </Link>
         </div>
         <a className="home__header__container__link" href="http://www.bc211.ca/help-lines/">Continue to Main Site</a>
       </div>
