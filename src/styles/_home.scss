@@ -1,6 +1,8 @@
 @import "src/styles/variables";
 
 .home {
+  font-family: 'Droid Sans', sans-serif;
+
   &__header {
     height: 123px;
     background-color: #1a2228;
@@ -30,6 +32,26 @@
           overflow: hidden;
           outline: 0;
         }
+      }
+    }
+  }
+
+  &__content {
+    padding: 92px 0;
+
+    &__title {
+
+    }
+
+    &__paragraph1 {
+
+    }
+
+    &__paragraph2 {
+      &__link {
+        color: #3c6787;
+        font-weight: bold;
+        text-decoration: none;
       }
     }
   }
