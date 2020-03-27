@@ -1,18 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Home = () => (
   <div className="home">
     <div className="home__header">
       <div className="home__header__container container">
         <div className="home__header__container__logo">
-          <Link
+          <a
             className="home__header__container__logo__title"
             title="bc211"
-            to="http://www.bc211.ca"
+            href="http://www.bc211.ca"
           >
             bc211
-          </Link>
+          </a>
         </div>
       </div>
     </div>
@@ -25,14 +24,14 @@ const Home = () => (
       </p>
       <p className="home__content__paragraph2">
         To register for services, or to offer help, please fill in this&nbsp;
-        <Link
+        <a
           className="home__content__paragraph2__link"
-          to="https://forms.gle/V3yADFxST9Urp2pD7"
+          href="https://forms.gle/V3yADFxST9Urp2pD7"
           target="_blank"
           rel="noopener noreferrer"
         >
           form
-        </Link>
+        </a>
         .
       </p>
     </div>
