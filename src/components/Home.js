@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Home = () => (
   <div className="home">
@@ -17,8 +16,24 @@ const Home = () => (
       </div>
     </div>
 
-    <div className="home__content">
-      TODO
+    <div className="home__content container">
+      <h1 className="home__content__title">Safe Seniors, Strong Communities</h1>
+      <p className="home__content__paragraph1">
+        A program that matches seniors who need support with non-medical
+        essentials, to volunteers in their community that are willing to help.
+      </p>
+      <p className="home__content__paragraph2">
+        To register for services, or to offer help, please fill in this&nbsp;
+        <a
+          className="home__content__paragraph2__link"
+          href="https://forms.gle/V3yADFxST9Urp2pD7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          form
+        </a>
+        .
+      </p>
     </div>
   </div>
 );
