@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
 
-  const handleCTAClick = () => window.location.href = 'http://www.bc211.ca';
+  const handleCTAClick = () => window.location.href = 'http://www.bc211.ca/home';
 
   const handleRegisterClick = () => window.open('https://forms.gle/V3yADFxST9Urp2pD7', '_blank');
 
