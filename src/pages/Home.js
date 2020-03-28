@@ -10,8 +10,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
 
-import icon_register from '@/assets/icon_register.svg';
-import icon_alert from '@/assets/icon_alert.svg';
+import IconRegister from '@/assets/icon_register.svg';
+import IconAlert from '@/assets/icon_alert.svg';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -141,11 +141,11 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
 
-  const handleCTAClick = () => window.location.href = 'http://www.bc211.ca/home';
+  const handleCTAClick = () => { window.location.href = 'http://www.bc211.ca/home' };
 
   const handleRegisterClick = () => window.open('https://forms.gle/V3yADFxST9Urp2pD7', '_blank');
 
-  const handleLearnMoreClick = () => window.location.href ='http://www.bc211.ca/coronavirus-2019-outbreak/';
+  const handleLearnMoreClick = () => { window.location.href ='http://www.bc211.ca/coronavirus-2019-outbreak/' };
 
   const handle211ImageClick = () => window.open('http://211.ca/', '_blank');
 
@@ -188,7 +188,7 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Card className={classes.card} variant="outlined">
               <CardContent>
-                <img width="40" height="40" src={icon_register} />
+                <img width="40" height="40" src={IconRegister} />
                 <Typography className={classes.cardTitle}>
                   Register for NEW Safe Seniors, Strong Communities Program
                 </Typography>
@@ -215,7 +215,7 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Card className={classes.card} variant="outlined">
               <CardContent>
-                <img width="40" height="40" src={icon_alert} />
+                <img width="40" height="40" src={IconAlert} />
                 <Typography className={classes.cardTitle}>
                   Coronavirus Outbreak Information
                 </Typography>

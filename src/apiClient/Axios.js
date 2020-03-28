@@ -9,7 +9,7 @@ instance.interceptors.response.use(
   response => response.data,
   // Automatically log a failed response and then pass it along
   error => {
-    console.error(error);
+    console.error(error); // eslint-disable-line no-console
     return Promise.reject(error);
   }
 );
