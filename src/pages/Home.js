@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     width: '260px',
     height: '81px',
     marginRight: '20px',
+    cursor: 'pointer',
     [theme.breakpoints.down('sm')]: {
       width: '130px',
       height: '40px',
@@ -101,16 +102,29 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     backgroundColor: '#F6F6F6',
-    height: '210px',
+    padding: '52px 0',
+  },
+  footer211Image: {
+    cursor: 'pointer',
   },
 
   // Footer nav styles
   footerNavWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '14px 0',
     backgroundColor: '#3F3E40',
-    height: '95px',
+    fontSize: '8pt',
+    color: '#FFFFFF !important',
   },
-  footer211Image: {
-    cursor: 'pointer',
+  footerNavRow: {
+    padding: '5px 0',
+    margin: '0 0 5px',
+    '& > a': {
+      fontWeight: 'bold',
+      textDecoration: 'none',
+      color: '#FFFFFF !important',
+    },
   },
 
   // Util styles
@@ -128,6 +142,10 @@ const Home = () => {
   const classes = useStyles();
 
   const handleCTAClick = () => window.location.href = 'http://www.bc211.ca';
+
+  const handleRegisterClick = () => window.open('https://forms.gle/V3yADFxST9Urp2pD7', '_blank');
+
+  const handleLearnMoreClick = () => window.location.href ='http://www.bc211.ca/coronavirus-2019-outbreak/';
 
   const handle211ImageClick = () => window.open('http://211.ca/', '_blank');
 
@@ -186,6 +204,7 @@ const Home = () => {
                   className={classes.ctaButton}
                   color="inherit"
                   variant="contained"
+                  onClick={handleRegisterClick}
                 >
                   Click here to register now
                 </Button>
@@ -210,6 +229,7 @@ const Home = () => {
                   className={classes.ctaButton}
                   color="inherit"
                   variant="contained"
+                  onClick={handleLearnMoreClick}
                 >
                   Learn more
                 </Button>
@@ -255,16 +275,36 @@ const Home = () => {
               />
             </Grid>
           </Grid>
-
-
         </Container>
       </div>
 
       {/** Footer Nav */}
       <div className={classes.footerNavWrapper}>
-
+        <Container maxWidth="sm">
+          <Grid container justify="center" alignItems="center">
+            <Grid className={classes.footerNavRow} item>
+              <a href="http://www.bc211.ca/about/">About Us</a>
+              &nbsp;|&nbsp;
+              <a href="http://www.bc211.ca/our-funders/">Our Funders</a>
+              &nbsp;|&nbsp;
+              <a href="http://www.bc211.ca/blog/">Blog</a>
+              &nbsp;|&nbsp;
+              <a href="http://www.bc211.ca/contact/">Contact</a>
+              &nbsp;|&nbsp;
+              <a href="http://www.bc211.ca/terms-of-use-and-privacy/">Terms of Use and Privacy</a>
+            </Grid>
+            <Grid className={classes.footerNavRow} item>
+              © bc211 2019
+              &nbsp;|&nbsp;
+              Vancouver BC
+              &nbsp;|&nbsp;
+              <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#098;&#099;&#050;&#049;&#049;&#046;&#099;&#097;">info@bc211.ca</a>
+              &nbsp;|&nbsp;
+              Admin: 604-875-6431
+            </Grid>
+          </Grid>
+        </Container>
       </div>
-
     </div>
   );
 };
