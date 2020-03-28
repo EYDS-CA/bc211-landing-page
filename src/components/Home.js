@@ -1,4 +1,5 @@
 import React from "react";
+import Panel from "@/components/Panel";
 
 const Home = () => (
   <div className="home">
@@ -18,6 +19,18 @@ const Home = () => (
     </div>
 
     <div className="home__content container">
+      <Panel
+        title="Register for new Safe Seniors Program"
+        icon="register"
+      >
+        test
+      </Panel>
+      <Panel
+        title="Coronavirus Outbreak Information"
+        icon="alert"
+      >
+        test
+      </Panel>
       <h1 className="home__content__title">Safe Seniors, Strong Communities</h1>
       <p className="home__content__paragraph1">
         A program that matches seniors who need support with non-medical
