@@ -1,6 +1,4 @@
-import React from "react";
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -9,37 +7,14 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
+import { useHistory } from 'react-router-dom';
 
 import IconRegister from '@/assets/icon_register.svg';
 import IconAlert from '@/assets/icon_alert.svg';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 const useStyles = makeStyles((theme) => ({
-
-  root: {
-    backgroundColor: '#FFFFFF',
-    fontFamily: 'Arial, sans-serif',
-  },
-
-  // Header styles
-  appBar: {
-    backgroundColor: '#1B2229'
-  },
-  toolbar: {
-    height: '125px',
-  },
-  headerLogoWrapper: {
-    flexGrow: 1,
-  },
-  headerLogo: {
-    width: '260px',
-    height: '81px',
-    marginRight: '20px',
-    cursor: 'pointer',
-    [theme.breakpoints.down('sm')]: {
-      width: '130px',
-      height: '40px',
-    },
-  },
 
   // Hero styles
   heroWrapper: {
@@ -97,36 +72,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '56px',
   },
 
-  // Footer styles
-  footerWrapper: {
-    display: 'flex',
-    alignItems: 'center',
-    backgroundColor: '#F6F6F6',
-    padding: '52px 0',
-  },
-  footer211Image: {
-    cursor: 'pointer',
-  },
-
-  // Footer nav styles
-  footerNavWrapper: {
-    display: 'flex',
-    alignItems: 'center',
-    padding: '14px 0',
-    backgroundColor: '#3F3E40',
-    fontSize: '8pt',
-    color: '#FFFFFF !important',
-  },
-  footerNavRow: {
-    padding: '5px 0',
-    margin: '0 0 5px',
-    '& > a': {
-      fontWeight: 'bold',
-      textDecoration: 'none',
-      color: '#FFFFFF !important',
-    },
-  },
-
   // Util styles
   ctaButton: {
     fontWeight: 'bold',
@@ -140,39 +85,19 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const classes = useStyles();
+  const history = useHistory();
 
   const handleCTAClick = () => { window.location.href = 'http://www.bc211.ca/home' };
 
   const handleRegisterClick = () => window.open('https://forms.gle/V3yADFxST9Urp2pD7', '_blank');
 
-  const handleLearnMoreClick = () => { window.location.href ='http://www.bc211.ca/coronavirus-2019-outbreak/' };
-
-  const handle211ImageClick = () => window.open('http://211.ca/', '_blank');
+  const handleLearnMoreClick = () => history.push('/coronavirus-2019-outbreak');
 
   return (
-    <div className={classes.root}>
+    <div>
 
       {/** Header */}
-      <AppBar className={classes.appBar} position="static">
-        <Container maxWidth="lg">
-          <Toolbar className={classes.toolbar}>
-            <div className={classes.headerLogoWrapper}>
-              <img
-                className={classes.headerLogo}
-                src="http://www.bc211.ca/wp-content/uploads/2017/03/bc211_logo_small.png"
-                onClick={handleCTAClick}
-              />
-            </div>
-            <Button
-              className={classes.ctaButton}
-              variant="contained"
-              onClick={handleCTAClick}
-            >
-              Continue to Main BC211 Homepage
-            </Button>
-          </Toolbar>
-        </Container>
-      </AppBar>
+      <Header />
 
       {/** Hero */}
       <div className={classes.heroWrapper}>
@@ -255,56 +180,7 @@ const Home = () => {
       </Container>
 
       {/** Footer */}
-      <div className={classes.footerWrapper}>
-        <Container maxWidth="md">
-          <Grid container justify="center" alignItems="center" spacing={8}>
-            <Grid item>
-              <img
-                className={classes.footer211Image}
-                src="http://bc211.ca/wp-content/uploads/2014/10/211-logo.png"
-                width="200"
-                height="131"
-                onClick={handle211ImageClick}
-              />
-            </Grid>
-            <Grid item>
-              <img
-                src="http://bc211.ca/wp-content/uploads/2017/06/uway-canada-logo-horiz__cmyk.png"
-                width="326"
-                height="97"
-              />
-            </Grid>
-          </Grid>
-        </Container>
-      </div>
-
-      {/** Footer Nav */}
-      <div className={classes.footerNavWrapper}>
-        <Container maxWidth="sm">
-          <Grid container justify="center" alignItems="center">
-            <Grid className={classes.footerNavRow} item>
-              <a href="http://www.bc211.ca/about/">About Us</a>
-              &nbsp;|&nbsp;
-              <a href="http://www.bc211.ca/our-funders/">Our Funders</a>
-              &nbsp;|&nbsp;
-              <a href="http://www.bc211.ca/blog/">Blog</a>
-              &nbsp;|&nbsp;
-              <a href="http://www.bc211.ca/contact/">Contact</a>
-              &nbsp;|&nbsp;
-              <a href="http://www.bc211.ca/terms-of-use-and-privacy/">Terms of Use and Privacy</a>
-            </Grid>
-            <Grid className={classes.footerNavRow} item>
-              © bc211 2019
-              &nbsp;|&nbsp;
-              Vancouver BC
-              &nbsp;|&nbsp;
-              <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#098;&#099;&#050;&#049;&#049;&#046;&#099;&#097;">info@bc211.ca</a>
-              &nbsp;|&nbsp;
-              Admin: 604-875-6431
-            </Grid>
-          </Grid>
-        </Container>
-      </div>
+      <Footer />
     </div>
   );
 };
