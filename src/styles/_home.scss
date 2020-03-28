@@ -33,6 +33,19 @@
           outline: 0;
         }
       }
+
+      &__link {
+        background-color: #da3636;
+        color: white;
+        display: block;
+        right: 0;
+        top: 20px;
+        width: 200px;
+        padding: 10px;
+        position: absolute;
+        text-decoration: none;
+        text-align: center;
+      }
     }
   }
 

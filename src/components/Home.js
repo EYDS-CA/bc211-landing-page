@@ -13,6 +13,7 @@ const Home = () => (
             bc211
           </a>
         </div>
+        <a className="home__header__container__link" href="http://www.bc211.ca/help-lines/">Continue to Main Site</a>
       </div>
     </div>
 
