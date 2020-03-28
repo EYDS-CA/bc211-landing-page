@@ -13,9 +13,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import icon_register from '@/assets/icon_register.svg';
 import icon_alert from '@/assets/icon_alert.svg';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
 
   root: {
+    backgroundColor: '#FFFFFF',
     fontFamily: 'Arial, sans-serif',
   },
 
@@ -30,17 +31,19 @@ const useStyles = makeStyles(() => ({
     flexGrow: 1,
   },
   headerLogo: {
-    background: 'transparent url(http://www.bc211.ca/wp-content/uploads/2017/03/bc211_logo_small.png) no-repeat 0 100%',
     width: '260px',
     height: '81px',
-    display: 'block',
+    marginRight: '20px',
+    [theme.breakpoints.down('sm')]: {
+      width: '130px',
+      height: '40px',
+    },
   },
 
   // Hero styles
   heroWrapper: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '32px',
     height: '190px',
     width: '100%',
     background: 'url(http://www.bc211.ca/wp-content/uploads/2014/10/181144228-1.jpg)',
@@ -53,15 +56,24 @@ const useStyles = makeStyles(() => ({
     fontSize: '25px',
     backgroundColor: '#FFFFFF',
     padding: '25px 70px 25px 45px',
+    [theme.breakpoints.down('sm')]: {
+      padding: '17px 35px 17px 22px',
+      fontSize: '20px',
+    },
   },
   heroTextRed: {
     color: '#CE0026',
   },
 
   // Card styles
+  cardsWrapper: {
+    marginTop: '32px',
+    marginBottom: '34px',
+  },
   card: {
     height: '100%',
     textAlign: 'center',
+    borderWidth: '3px',
   },
   cardTitle: {
     fontSize: '24px',
@@ -79,8 +91,31 @@ const useStyles = makeStyles(() => ({
     paddingTop: '0',
   },
 
+  // CTA styles
+  ctaWrapper: {
+    marginBottom: '56px',
+  },
+
+  // Footer styles
+  footerWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    backgroundColor: '#F6F6F6',
+    height: '210px',
+  },
+
+  // Footer nav styles
+  footerNavWrapper: {
+    backgroundColor: '#3F3E40',
+    height: '95px',
+  },
+  footer211Image: {
+    cursor: 'pointer',
+  },
+
   // Util styles
   ctaButton: {
+    fontWeight: 'bold',
     color: '#FFFFFF',
     backgroundColor: '#CE0026',
     '&:hover': {
@@ -94,6 +129,8 @@ const Home = () => {
 
   const handleCTAClick = () => window.location.href = 'http://www.bc211.ca';
 
+  const handle211ImageClick = () => window.open('http://211.ca/', '_blank');
+
   return (
     <div className={classes.root}>
 
@@ -102,14 +139,14 @@ const Home = () => {
         <Container maxWidth="lg">
           <Toolbar className={classes.toolbar}>
             <div className={classes.headerLogoWrapper}>
-              <a
+              <img
                 className={classes.headerLogo}
-                href="http://www.bc211.ca"
+                src="http://www.bc211.ca/wp-content/uploads/2017/03/bc211_logo_small.png"
+                onClick={handleCTAClick}
               />
             </div>
             <Button
               className={classes.ctaButton}
-              color="inherit"
               variant="contained"
               onClick={handleCTAClick}
             >
@@ -128,7 +165,7 @@ const Home = () => {
       </div>
 
       {/** Cards */}
-      <Container maxWidth="lg">
+      <Container className={classes.cardsWrapper} maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
             <Card className={classes.card} variant="outlined">
@@ -181,6 +218,53 @@ const Home = () => {
           </Grid>
         </Grid>
       </Container>
+
+      {/** CTA */}
+      <Container className={classes.ctaWrapper} maxWidth="sm">
+        <Grid container justify="center">
+          <Grid item>
+            <Button
+              className={classes.ctaButton}
+              variant="contained"
+              onClick={handleCTAClick}
+            >
+              Continue to Main BC211 Homepage
+            </Button>
+          </Grid>
+        </Grid>
+      </Container>
+
+      {/** Footer */}
+      <div className={classes.footerWrapper}>
+        <Container maxWidth="md">
+          <Grid container justify="center" alignItems="center" spacing={8}>
+            <Grid item>
+              <img
+                className={classes.footer211Image}
+                src="http://bc211.ca/wp-content/uploads/2014/10/211-logo.png"
+                width="200"
+                height="131"
+                onClick={handle211ImageClick}
+              />
+            </Grid>
+            <Grid item>
+              <img
+                src="http://bc211.ca/wp-content/uploads/2017/06/uway-canada-logo-horiz__cmyk.png"
+                width="326"
+                height="97"
+              />
+            </Grid>
+          </Grid>
+
+
+        </Container>
+      </div>
+
+      {/** Footer Nav */}
+      <div className={classes.footerNavWrapper}>
+
+      </div>
+
     </div>
   );
 };
