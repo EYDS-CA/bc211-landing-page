@@ -42,7 +42,10 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
 
-  const handleCTAClick = () => window.location.href = 'http://www.bc211.ca/home';
+  const handleCTAClick = () => {
+    ga('send', 'event', 'CTA click', 'click', 'Continue');
+    window.location.href = 'http://www.bc211.ca/home';
+  };
 
   return (
     <AppBar className={classes.appBar} position="static">

@@ -3,6 +3,9 @@ const path = require("path");
 module.exports = {
   parser: "babel-eslint",
   root: true,
+  globals: {
+    ga: true,
+  },
   env: {
     node: true,
     browser: true,
