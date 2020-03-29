@@ -43,7 +43,7 @@ const Header = () => {
   const classes = useStyles();
 
   const handleCTAClick = () => {
-    ga('send', 'event', 'CTA click', 'click', 'Continue');
+    gtag('event', 'Click', { event_category: 'CTA', event_label: 'Continue' });
     window.location.href = 'http://www.bc211.ca/home';
   };
 

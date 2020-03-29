@@ -4,7 +4,7 @@ module.exports = {
   parser: "babel-eslint",
   root: true,
   globals: {
-    ga: true,
+    gtag: true,
   },
   env: {
     node: true,
