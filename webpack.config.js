@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || 3000;
@@ -30,6 +31,7 @@ const getLoaders = () => [
 // Plugins
 const getPlugins = (isDevelopment) => [
   new CleanWebpackPlugin(),
+  new CopyPlugin(['public/chat-assets']),
   new HtmlWebpackPlugin({
     title: 'BC211 Landing Page',
     template: path.join(__dirname, 'public', 'index.html'),
@@ -49,9 +51,12 @@ const config = {
       '@': path.join(__dirname, 'src'),
     },
   },
+  module: {
+    rules: getLoaders(),
+  },
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: '/public/',
     filename: 'bundle.js',
   },
 };
@@ -60,9 +65,6 @@ const prodConfig = {
   ...config,
   name: 'prod',
   mode: 'production',
-  module: {
-    rules: getLoaders(),
-  },
   plugins: getPlugins(false),
   performance: { hints: false },
 };
@@ -71,12 +73,9 @@ const devConfig = {
   ...config,
   name: 'dev',
   mode: 'development',
-  module: {
-    rules: getLoaders(),
-  },
   plugins: getPlugins(true),
   devServer: {
-    contentBase: './dist',
+    contentBase: ['./dist'],
     hot: true,
     historyApiFallback: true,
     writeToDisk: true,
