@@ -56,7 +56,7 @@ const config = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: '/public/',
+    publicPath: '/',
     filename: 'bundle.js',
   },
 };
