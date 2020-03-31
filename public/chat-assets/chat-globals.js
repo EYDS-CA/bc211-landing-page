@@ -1,4 +1,4 @@
-const chatSDKGlobals = { // eslint-disable-line no-unused-vars
+var chatSDKGlobals = { // eslint-disable-line no-unused-vars, no-var
   OptionalParameter: {
     "key": "",
     "value": ""
