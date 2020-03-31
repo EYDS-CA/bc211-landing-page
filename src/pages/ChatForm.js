@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ChatForm = () => {
+  const locationPath = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
   return (
     <form id="inputform" name='inputform' method="POST" action='https://cc.elements.telus.com/Elementschat/ChatClient.html'>
       <table>
@@ -12,7 +13,7 @@ const ChatForm = () => {
           </tr>
           <tr>
             <td>
-              <input readOnly type="text" id="Call_Center_Address" name="Call_Center_Address" value="cc.elements.telus.com"/>
+              <input type="text" id="Call_Center_Address" name="Call_Center_Address" defaultValue="cc.elements.telus.com"/>
             </td>
           </tr>
           <tr>
@@ -34,7 +35,7 @@ const ChatForm = () => {
               <label>Call center Port:</label>
             </td>
             <td>
-              <input readOnly type="text" id="Call_Center_Port" name="Call_Center_Port" value="2324"/>
+              <input type="text" id="Call_Center_Port" name="Call_Center_Port" defaultValue="2324"/>
             </td>
           </tr>
           <tr>
@@ -58,7 +59,7 @@ const ChatForm = () => {
               <label>Calling user phone type: </label>
             </td>
             <td>
-              <input readOnly type="text" id="Calling_User_PhoneType" name="Calling_User_PhoneType" value="CHAT"/>
+              <input type="text" id="Calling_User_PhoneType" name="Calling_User_PhoneType" defaultValue="CHAT"/>
             </td>
           </tr>
           <tr>
@@ -157,7 +158,7 @@ const ChatForm = () => {
           </tr>
           <tr>
             <td>
-              <input type="text" id="Hide_Send_Button" name="Hide_Send_Button"/>
+              <input type="text" id="Hide_Send_Button" name="Hide_Send_Button" defaultValue="true"/>
             </td>
           </tr>
           <tr>
@@ -199,7 +200,7 @@ const ChatForm = () => {
           </tr>
           <tr>
             <td>
-              <input readOnly type="text" id="layout_js" name="layout_js" value="/public/chat-layout.js"/>
+              <input readOnly type="text" id="layout_js" name="layout_js" value={`${locationPath}/chat-layout.js`}/>
             </td>
           </tr>
           <tr>
@@ -207,12 +208,12 @@ const ChatForm = () => {
               <label>Layout css file: </label>
             </td>
             <td>
-              <input readOnly type="text" id="layout_css" name="layout_css" value="/public/chat-styles.css"/>
+              <input readOnly type="text" id="layout_css" name="layout_css" value={`${locationPath}/chat-styles.css`}/>
             </td>
           </tr>
           <tr>
             <td>
-              <input readOnly type="text" id="global_js" name="global_js" value="/public/chat-globals.js"/>
+              <input readOnly type="text" id="global_js" name="global_js" value={`${locationPath}/chat-globals.js`}/>
             </td>
           </tr>
         </tbody>
