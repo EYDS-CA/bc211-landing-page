@@ -87,11 +87,20 @@ const Home = () => {
   const classes = useStyles();
   const history = useHistory();
 
-  const handleCTAClick = () => { window.location.href = 'http://www.bc211.ca/home' };
+  const handleCTAClick = () => {
+    gtag('event', 'Click', { event_category: 'CTA', event_label: 'Continue' });
+    window.location.href = 'http://www.bc211.ca/home';
+  };
 
-  const handleRegisterClick = () => window.open('https://forms.gle/V3yADFxST9Urp2pD7', '_blank');
+  const handleRegisterClick = () => {
+    gtag('event', 'Click', { event_category: 'CTA', event_label: 'Register' });
+    window.open('https://forms.gle/ctx4rxiUtxUivEkn8', '_blank');
+  };
 
-  const handleLearnMoreClick = () => history.push('/coronavirus-2019-outbreak');
+  const handleLearnMoreClick = () => {
+    gtag('event', 'Click', { event_category: 'CTA', event_label: 'Coronavirus' });
+    history.push('/coronavirus-2019-outbreak');
+  };
 
   return (
     <div>
