@@ -56,7 +56,7 @@ const config = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: '/test/',
+    publicPath: '/',
     filename: 'bundle.js',
   },
 };
@@ -75,7 +75,7 @@ const devConfig = {
   mode: 'development',
   plugins: getPlugins(true),
   devServer: {
-    contentBase: ['./dist'],
+    contentBase: './dist',
     hot: true,
     historyApiFallback: true,
     writeToDisk: true,
