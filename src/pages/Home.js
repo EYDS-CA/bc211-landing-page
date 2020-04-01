@@ -94,7 +94,7 @@ const Home = () => {
 
   const handleRegisterClick = () => {
     gtag('event', 'Click', { event_category: 'CTA', event_label: 'Register' });
-    window.open('https://forms.gle/V3yADFxST9Urp2pD7', '_blank');
+    window.open('https://forms.gle/ctx4rxiUtxUivEkn8', '_blank');
   };
 
   const handleLearnMoreClick = () => {
