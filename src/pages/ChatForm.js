@@ -40,7 +40,7 @@ const ChatForm = () => {
           </tr>
           <tr>
             <td>
-              <input type="text" id="TenantID" name="TenantID"/>
+              <input type="text" id="TenantID" name="TenantID" defaultValue="108"/>
             </td>
           </tr>
           <tr>
