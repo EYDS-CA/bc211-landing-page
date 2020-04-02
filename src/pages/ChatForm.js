@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChatForm = () => {
   // const locationPath = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
-  const locationPath = 'https://bookmarkl.ink'
+  // const locationPath = 'https://bookmarkl.ink'
   return (
     <form id="inputform" name='inputform' method="POST" action='https://cc.elements.telus.com/Elementschat/ChatClient.html'>
       Call Center Name<input type="text" id="Call_Center_Name" name="Call_Center_Name"/><br/>
@@ -29,9 +29,9 @@ const ChatForm = () => {
       Hide Send Button<input type="text" id="Hide_Send_Button" name="Hide_Send_Button" defaultValue="true"/><br/>
       Estimated Wait Time Flag<input type="text" id="Estimated_Wait_Time_Flag" name="Estimated_Wait_Time_Flag"/><br/>
       Estimated Wait Time Seconds<input type="text" id="Estimated_Wait_Time_Add_seconds" name="Estimated_Wait_Time_Add_seconds"/><br/>
-      Layout JS URL<input type="text" id="layout_js" name="layout_js" defaultValue={`${locationPath}/chat-layout.js`}/><br/>
-      Laout CSS URL<input type="text" id="layout_css" name="layout_css" defaultValue={`${locationPath}/chat-styles.css`}/><br/>
-      Globals JS URL<input type="text" id="global_js" name="global_js" defaultValue={`${locationPath}/chat-globals.js`}/><br/>
+      Layout JS URL<input type="text" id="layout_js" name="layout_js" defaultValue="https://cc.elements.telus.com/Elementschat/JS/4windowlayout.js"/><br/>
+      Laout CSS URL<input type="text" id="layout_css" name="layout_css" defaultValue="https://cc.elements.telus.com/Elementschat/CSS/fourwindowlayout.css"/><br/>
+      Globals JS URL<input type="text" id="global_js" name="global_js" defaultValue="https://cc.elements.telus.com/Elementschat/JS/PS.ChatSDK.Globals.js" /><br/>
       <button id="SubmitData" name="SubmitData" type="submit">Start Chat</button>
     </form>
   );
