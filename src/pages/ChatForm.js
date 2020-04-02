@@ -5,12 +5,12 @@ const ChatForm = () => {
   // const locationPath = 'https://bookmarkl.ink'
   return (
     <form id="inputform" name='inputform' method="POST" action='https://cc.elements.telus.com/Elementschat/ChatClient.html'>
-      <input type="text" id="Call_Center_Name" name="Call_Center_Name"/>
+      Call Center Call Center Name<input type="text" id="Call_Center_Name" name="Call_Center_Name"/><br />
       <input type="hidden" id="Call_Center_Address" name="Call_Center_Address" defaultValue="cc.elements.telus.com"/>
       Call Center Queue Name<input type="text" id="Call_Center_QueueName" name="Call_Center_QueueName"/><br/>
       <input type="hidden" id="Call_Center_Port" name="Call_Center_Port" defaultValue="2324"/>
       <input type="hidden" id="TenantID" name="TenantID" defaultValue="108"/>
-      <input type="hidden" id="AppID" name="AppID"/>
+      App Id<input type="hidden" id="AppID" name="AppID"/><br />
       <input type="hidden" id="Calling_User_PhoneType" name="Calling_User_PhoneType" defaultValue="CHAT"/>
       <input type="hidden" id="Calling_User_Skills" name="Calling_User_Skills"/>
       First Name<input type="text" id="Calling_User_FirstName" name="Calling_User_FirstName"/>&nbsp;
