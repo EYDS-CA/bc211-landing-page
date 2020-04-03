@@ -30,7 +30,7 @@ img, a {
 
 .companylogo {
   display: block;
-  /* background: url('../IMAGE/TELUS-logo.svg') no-repeat; */
+  background: url('http://www.bc211.ca/wp-content/uploads/2017/03/bc211_logo_small.png') no-repeat;
   min-width: 50%;
   min-height: 50%;
   max-width: 100%;
