@@ -19,7 +19,7 @@ const ChatForm = () => {
       URL<input type="text" id="Calling_User_URL" name="Calling_User_URL"/><br/>
       Message:
       <textarea id="Calling_User_HardMessage" name="Calling_User_HardMessage" ></textarea><br />
-      <input type="text" id="Three_PanelLayout" name="Three_PanelLayout"/>
+      Three Panel Layout <input type="text" id="Three_PanelLayout" name="Three_PanelLayout"/><br />
       <input type="hidden" id="Display_URL_In_Panel_4" name="Display_URL_In_Panel_4"/>
       <input type="hidden" id="Open_URL_In_Browser" name="Open_URL_In_Browser"/>
       <input type="hidden" id="URlDisplayspeed" name="URlDisplayspeed"/>
