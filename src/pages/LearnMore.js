@@ -50,10 +50,9 @@ const LearnMore = () => {
           Information about the Coronavirus
         </Typography>
         <Typography className={classes.description}>
-          As of March 18, 2020, the Province of British Columbia has declared a
-          state of emergency to support response to COVID-19. The priority is to
-          protect British Columbians and ensure that the province is best
-          positioned to effectively respond to the pandemic.
+          The Province of British Columbia has declared a
+          state of emergency to support response to COVID-19. This state of
+          emergency has been extended until at least April 14, 2020.
           <a href="https://www2.gov.bc.ca/gov/content/safety/emergency-preparedness-response-recovery/covid-19-provincial-support" target="_blank" rel="noopener noreferrer">
             &nbsp;See Provincial COVID-19 News&nbsp;
           </a>
@@ -79,8 +78,7 @@ const LearnMore = () => {
           </a>
           is playing a significant role in supporting the public and has a FAQ about the coronavirus. If you have
           questions you can call <strong>811</strong> toll-free in BC, or for the deaf and hard of hearing, call 7-1-1.
-          Translation services are available in more than 130 languages.
-          <strong> Please note that 811 is experiencing high call volumes and long wait times.</strong> Ministry of
+          Translation services are available in more than 130 languages. Ministry of
           Health has created a phone service to provide <strong>non-medical</strong> information about COVID-19,
           including the latest information on travel recommendations and social distancing. Information is available
           in more than 110 languages, 7:30 am – 8 pm daily.
@@ -145,25 +143,20 @@ const LearnMore = () => {
               &nbsp;online application.&nbsp;
             </a>
           </ul>
-          <strong>Canada Emergency Support Response Benefit</strong> (begins the first week of April 2020) will provide
-          a taxable benefit of $2000 a month for up to four months to:
+          <strong>Canada Emergency Support Response Benefit (CERB)</strong> (applications open April 6, 2020) will provide
+          a taxable benefit of $2000 a month (paid in $500 per week installments) for up to four months to:
           <ul>
             <li>
-              Workers who must stop working due to COVID-19 and do not have access to paid leave or other income support
+              Individuals residing in Canada, who are at least 15 years old
             </li>
             <li>
-              Workers who are sick, quarantined, or taking care of someone who is sick with COVID-19
+              Workers who must stop working due to COVID-19 (sickness, quarantine, or are taking care of someone who is sick) or are eligible for EI regular or sickness benefits
             </li>
             <li>
-              Working parents who must stay home without pay to care for children that are sick or need additional care
-              because of school and daycare closures
+              Workers who are or expect to be without employment or self-employment income for at least 14 consecutive days in the initial four-week period
             </li>
             <li>
-              Workers who still have their employment but are not being paid because there is currently not sufficient
-              work and their employer has asked them not to come to work
-            </li>
-            <li>
-              Wage earners and self-employed individuals, including contract workers, who would not otherwise be eligible for EI
+              Who had income of at least $5,000 in 2019 or in the twelve months prior to the date of their application
             </li>
             <li>
               Application details will be available through
@@ -174,16 +167,14 @@ const LearnMore = () => {
               <a href="https://www.canada.ca/en/employment-social-development/services/my-account.html" target="_blank" rel="noopener noreferrer">
                 &nbsp;My Service Canada&nbsp;
               </a>
-            </li>
-            <li>
-              NOTE: This benefit replaces the previously announced Emergency Care Benefit and the Emergency Support Benefit
+              There is no waiting period; direct deposit payments will be made within three business days and cheques within 10 days to eligible applicants
             </li>
           </ul>
           <strong>Goods and Services Tax Credit (GSTC)</strong>(proposed for early May) will provide a one-time special
           payment which will double the maximum annual GSTC payment amounts for the 2019–20 benefit year. The average
           boost to income for those benefitting from this measure will be close to $400 for single individuals and
           close to $600 for couples. For families receiving the <strong>Canada Child Benefit (CCB),</strong> the
-          government is proposing to increase maximum annual payment amounts for the 2019–20 benefit year by $300 per
+          government is increasing maximum annual payment amounts for the 2019–20 benefit year by $300 per
           child. The overall increase for families receiving CCB will be approximately $550 on average; families will
           receive an extra $300 per child as part of their May payment. The Province of BC has also announced several
           financial supports:   The <strong>BC Emergency Benefit for Workers</strong> will provide a one-time, tax-free $1000 payment
@@ -200,7 +191,7 @@ const LearnMore = () => {
         <Typography className={classes.description}>
           <ul>
             <li>
-              A new rental supplement for renters with low to moderate incomes offers up to $500 for up to four months, paid directly to landlords (application available early April)
+              A new rental supplement administered by BC Housing for renters with low to moderate incomes who have experienced income loss or reduction as a result of the COVID-19 pandemic. Offers up to $500 for up to three months, paid directly to landlords (application available mid-April)
             </li>
             <li>
               Halting evictions, including the enforcement of existing eviction notices
@@ -218,6 +209,24 @@ const LearnMore = () => {
         </Typography>
 
         {/* Section #6 */}
+        <Typography component="h1" className={classes.title}>
+          For people on income or disability assistance:
+        </Typography>
+        <Typography className={classes.description}>
+          <ul>
+            <li>
+              Will be automatically provided a <strong>$300 crisis supplement</strong> for the next three months. This supplement will also be provided to low-income seniors who receive the BC Senior’s Supplement and recipients who reside in special care facilities.
+            </li>
+            <li>
+              Will be automatically provided the $52 <strong>Transportation Supplement</strong> on their next cheques for the duration of the fare suspension period.
+            </li>
+            <li>
+              The province will temporarily exempt federal employment insurance benefits, including the new $2,000 Canada Emergency Response Benefit. These payments will be fully exempted for the next three months so people receiving income assistance and disability assistance will benefit without any reductions to their monthly assistance payments.
+            </li>
+          </ul>
+        </Typography>
+
+        {/* Section #7 */}
         <Typography component="h1" className={classes.title}>
           Additional Information
         </Typography>
