@@ -31,10 +31,8 @@ const ChatForm = () => {
       <input type="hidden" id="Estimated_Wait_Time_Flag" name="Estimated_Wait_Time_Flag"/>
       <input type="hidden" id="Estimated_Wait_Time_Add_seconds" name="Estimated_Wait_Time_Add_seconds"/>
       <input type="hidden" id="layout_js" name="layout_js" defaultValue="https://cc.elements.telus.com/Elementschat/JS/4windowlayout.js"/>
-      {/* <input type="hidden" id="layout_css" name="layout_css" defaultValue="https://cc.elements.telus.com/Elementschat/CSS/fourwindowlayout.css"/> */}
       <input type="hidden" id="layout_css" name="layout_css" defaultValue="https://www.bc211.ca/chat-styles.css"/>
       <input type="hidden" id="global_js" name="global_js" defaultValue="https://cc.elements.telus.com/Elementschat/JS/PS.ChatSDK.Globals.js" />
-      {/* <input type="hidden" id="global_js" name="global_js" defaultValue="https://www.bc211.ca/chat-globals.js" /> */}
       <button id="SubmitData" name="SubmitData" type="submit">Start Chat</button>
     </form>
   );
