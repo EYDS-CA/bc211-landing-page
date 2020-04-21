@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
 
 import IconRegister from '@/assets/icon_register.svg';
+import heroWrapper from '@/assets/181144228-1.jpg';
 import IconAlert from '@/assets/icon_alert.svg';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     height: '190px',
     width: '100%',
-    background: 'url(http://www.bc211.ca/wp-content/uploads/2014/10/181144228-1.jpg)',
+    background: `url(${heroWrapper})`,
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',

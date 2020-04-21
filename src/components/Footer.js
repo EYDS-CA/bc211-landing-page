@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
+import uWay from '@/assets/uway-canada-logo-horiz__cmyk.png';
+import two11Logo from '@/assets/211-logo.png';
+
 
 const useStyles = makeStyles(() => ({
 
@@ -51,7 +54,7 @@ const Footer = () => {
             <Grid item>
               <img
                 className={classes.footer211Image}
-                src="http://bc211.ca/wp-content/uploads/2014/10/211-logo.png"
+                src={two11Logo}
                 width="200"
                 height="131"
                 onClick={handle211ImageClick}
@@ -59,7 +62,7 @@ const Footer = () => {
             </Grid>
             <Grid item>
               <img
-                src="http://bc211.ca/wp-content/uploads/2017/06/uway-canada-logo-horiz__cmyk.png"
+                src={uWay}
                 width="326"
                 height="97"
               />
