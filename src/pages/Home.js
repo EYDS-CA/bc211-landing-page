@@ -128,8 +128,9 @@ const Home = () => {
                   Register for NEW Safe Seniors, Strong Communities Program
                 </Typography>
                 <Typography className={classes.cardContent}>
-                  A program that matches seniors who need support with non-medical essentials,
-                  to volunteers in their community who are willing to help.
+                  A program that matches seniors who need support with non-medical essentials, to volunteers in their community who are willing to help.
+                  <br />
+                  When you register as a senior or a volunteer, your contact information is shared with the United Way's Better at Home agencies. Those agencies make the connections between seniors and volunteers in the community.
                   <br />
                   To register for services, or to offer help, register.
                 </Typography>
@@ -147,14 +148,14 @@ const Home = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} >
             <Card className={classes.card} variant="outlined">
-              <CardContent>
+              <CardContent >
                 <img width="40" height="40" src={IconAlert} />
                 <Typography className={classes.cardTitle}>
                   Coronavirus Outbreak Information
                 </Typography>
-                <Typography className={classes.cardContent}>
+                <Typography className={classes.cardContent} >
                   As of March 18, 2020, the Province of British Columbia has
                   declared a state of emergency to support response to COVID-19.
                 </Typography>

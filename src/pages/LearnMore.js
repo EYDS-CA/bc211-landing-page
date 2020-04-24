@@ -52,7 +52,7 @@ const LearnMore = () => {
         <Typography className={classes.description}>
           The Province of British Columbia has declared a
           state of emergency to support response to COVID-19. This state of
-          emergency has been extended until at least April 14, 2020.
+          emergency has been extended until at least April 28, 2020.
           <a href="https://www2.gov.bc.ca/gov/content/safety/emergency-preparedness-response-recovery/covid-19-provincial-support" target="_blank" rel="noopener noreferrer">
             &nbsp;See Provincial COVID-19 News&nbsp;
           </a>
@@ -136,13 +136,15 @@ const LearnMore = () => {
             <li>
               Waiving the requirement to provide a medical certificate to access EI.
             </li>
+            </ul>
+            <p>
             Contact the dedicated toll-free number if in quarantine and seeking to waive the waiting period: 1-833-381-2725, 1-800-529-3742 (TTY).
             <br />
             Individuals can also register for EI sickness benefits through the
             <a href="https://www.canada.ca/en/services/benefits/ei/ei-sickness/apply.html" target="_blank" rel="noopener noreferrer">
               &nbsp;online application.&nbsp;
             </a>
-          </ul>
+            </p>
           <strong>Canada Emergency Support Response Benefit (CERB)</strong> (applications open April 6, 2020) will provide
           a taxable benefit of $2000 a month (paid in $500 per week installments) for up to four months to:
           <ul>
@@ -156,7 +158,13 @@ const LearnMore = () => {
               Workers who are or expect to be without employment or self-employment income for at least 14 consecutive days in the initial four-week period
             </li>
             <li>
+              Workers (including seasonal workers) who have exhausted their EI regular benefits and are unable to find a job, return to work, or undertake regular seasonal work as a result of COVID-19
+            </li>
+            <li>
               Who had income of at least $5,000 in 2019 or in the twelve months prior to the date of their application
+            </li>
+            <li>
+              Workers earning up to $1,000 per month while collecting CERB
             </li>
             <li>
               Application details will be available through
@@ -167,9 +175,17 @@ const LearnMore = () => {
               <a href="https://www.canada.ca/en/employment-social-development/services/my-account.html" target="_blank" rel="noopener noreferrer">
                 &nbsp;My Service Canada&nbsp;
               </a>
-              There is no waiting period; direct deposit payments will be made within three business days and cheques within 10 days to eligible applicants
+              or by phone: <strong>1-800-959-2019</strong>. 
+              There is no waiting period; direct deposit payments will be made within three business days and cheques within 10 days to eligible applicants.
+            </li>
+            <li>
+              Eligibility periods are fixed in 4-week periods. Individuals can reapply for CERB for multiple 4-week periods if their situation continues.
+            </li>
+            <li>
+              The benefit will be available until September 26, 2020. Applications accepted no later than December 2, 2020.
             </li>
           </ul>
+          <p>
           <strong>Goods and Services Tax Credit (GSTC)</strong>(proposed for early May) will provide a one-time special
           payment which will double the maximum annual GSTC payment amounts for the 2019–20 benefit year. The average
           boost to income for those benefitting from this measure will be close to $400 for single individuals and
@@ -182,6 +198,7 @@ const LearnMore = () => {
           Emergency Care Benefit are eligible. Applications will open early April 2020. Payment will be made in May 2020.
           Increasing and expanding the <strong>BC Climate Action Tax Credit</strong> for moderate to low-income families in July 2020.
           Eligible adults will receive up to $218 (increased from $174) and children will receive $64 (increased from $51).
+          </p>
         </Typography>
 
         {/* Section #5 */}
@@ -204,6 +221,9 @@ const LearnMore = () => {
             </li>
             <li>
               Allowing landlords to restrict the use of common areas by tenants or guests
+            </li>
+            <li>
+              To speak to someone about the BC-TRS program call: <strong>778-452-2836 (Lower Mainland)</strong>, <strong>1-877-757-2577 (Toll-free)</strong>
             </li>
           </ul>
         </Typography>
