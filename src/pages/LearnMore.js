@@ -136,15 +136,15 @@ const LearnMore = () => {
             <li>
               Waiving the requirement to provide a medical certificate to access EI.
             </li>
-            </ul>
-            <p>
+          </ul>
+          <p>
             Contact the dedicated toll-free number if in quarantine and seeking to waive the waiting period: 1-833-381-2725, 1-800-529-3742 (TTY).
             <br />
             Individuals can also register for EI sickness benefits through the
             <a href="https://www.canada.ca/en/services/benefits/ei/ei-sickness/apply.html" target="_blank" rel="noopener noreferrer">
               &nbsp;online application.&nbsp;
             </a>
-            </p>
+          </p>
           <strong>Canada Emergency Support Response Benefit (CERB)</strong> (applications open April 6, 2020) will provide
           a taxable benefit of $2000 a month (paid in $500 per week installments) for up to four months to:
           <ul>

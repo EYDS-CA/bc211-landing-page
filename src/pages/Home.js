@@ -12,6 +12,7 @@ import { useHistory } from 'react-router-dom';
 import IconRegister from '@/assets/icon_register.svg';
 import heroWrapper from '@/assets/181144228-1.jpg';
 import IconAlert from '@/assets/icon_alert.svg';
+import IconPhone from '@/assets/icon_phone.svg';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
@@ -61,6 +62,11 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     fontSize: '15px',
     lineHeight: '25px',
+    '& a': {
+      color: '#3c6787',
+      fontWeight: 'bold',
+      textDecoration: 'none',
+    },
   },
   cardActions: {
     justifyContent: 'center',
@@ -123,14 +129,14 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Card className={classes.card} variant="outlined">
               <CardContent>
-                <img width="40" height="40" src={IconRegister} />
+                <img width="40" height="40" src={IconRegister}/>
                 <Typography className={classes.cardTitle}>
                   Register for NEW Safe Seniors, Strong Communities Program
                 </Typography>
                 <Typography className={classes.cardContent}>
                   A program that matches seniors who need support with non-medical essentials, to volunteers in their community who are willing to help.
                   <br />
-                  When you register as a senior or a volunteer, your contact information is shared with the United Way's Better at Home agencies. Those agencies make the connections between seniors and volunteers in the community.
+                  When you register as a senior or a volunteer, your contact information is shared with the United Way&apos;s Better at Home agencies. Those agencies make the connections between seniors and volunteers in the community.
                   <br />
                   To register for services, or to offer help, register.
                 </Typography>
@@ -148,14 +154,14 @@ const Home = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={6} >
+          <Grid item xs={12} md={6}>
             <Card className={classes.card} variant="outlined">
               <CardContent >
-                <img width="40" height="40" src={IconAlert} />
+                <img width="40" height="40" src={IconAlert}/>
                 <Typography className={classes.cardTitle}>
                   Coronavirus Outbreak Information
                 </Typography>
-                <Typography className={classes.cardContent} >
+                <Typography className={classes.cardContent}>
                   As of March 18, 2020, the Province of British Columbia has
                   declared a state of emergency to support response to COVID-19.
                 </Typography>
@@ -172,6 +178,27 @@ const Home = () => {
               </CardActions>
             </Card>
           </Grid>
+        </Grid>
+      </Container>
+
+      {/** Caregiver support line */}
+      <Container className={classes.ctaWrapper} maxWidth="sm">
+        <Grid container justify="center">
+          <Card className={classes.card} variant="outlined">
+            <CardContent>
+              <img width="40" height="40" src={IconPhone} />
+              <Typography className={classes.cardTitle}>
+                Family and Friend Caregiver Support Line
+              </Typography>
+              <Typography className={classes.cardTitle}>
+                1-877-520-3267
+              </Typography>
+              <Typography className={classes.cardContent}>
+                Family Caregivers of BC is here to support unpaid family and friend caregivers.
+                Call them at 1-877-520-3267 or visit their website at <a href="https://www.familycaregiversbc.ca">www.familycaregiversbc.ca</a>.
+              </Typography>
+            </CardContent>
+          </Card>
         </Grid>
       </Container>
 
