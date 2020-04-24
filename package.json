@@ -10,7 +10,7 @@
     "build": "webpack --config-name=prod",
     "start": "pm2 serve dist/ 3000 --spa --no-daemon --name client",
     "serve": "webpack-dev-server --config-name=dev",
-    "sync": "npm run build && aws s3 sync dist s3://bc211 --delete",
+    "sync": "npm run build && aws s3 sync dist s3://bc211 --delete --profile=default --region=us-west-2",
     "lint": "eslint ."
   },
   "dependencies": {
