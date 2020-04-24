@@ -150,7 +150,11 @@ const Home = () => {
 
           <Grid item xs={12} md={6} >
             <Card className={classes.card} variant="outlined">
+<<<<<<< Updated upstream
               <CardContent display="flex" >
+=======
+              <CardContent >
+>>>>>>> Stashed changes
                 <img width="40" height="40" src={IconAlert} />
                 <Typography className={classes.cardTitle}>
                   Coronavirus Outbreak Information
