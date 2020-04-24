@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
+import logo from '@/assets/bc211_logo_small.png';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -54,7 +55,7 @@ const Header = () => {
           <div className={classes.headerLogoWrapper}>
             <img
               className={classes.headerLogo}
-              src="http://www.bc211.ca/wp-content/uploads/2017/03/bc211_logo_small.png"
+              src={logo}
               onClick={handleCTAClick}
             />
           </div>
