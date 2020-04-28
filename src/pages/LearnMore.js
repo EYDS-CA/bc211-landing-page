@@ -62,10 +62,14 @@ const LearnMore = () => {
             &nbsp;COVID-19 BC Support App&nbsp;
           </a>
           for news and
-          alerts. As of <strong>March 25, 2020</strong> at 12 midnight, the Government of Canada
-          is enforcing the Quarantine Act, meaning that all travelers to Canada
-          must enter a mandatory 14-day quarantine. This excludes those deemed
-          essential workers.
+          alerts.
+          <br />
+          <br />
+          Effective April 8, 2020, all international travelers returning to BC
+          are required by law to self-isolate for 14 days and complete a
+          <a href="https://www2.gov.bc.ca/gov/content/safety/emergency-preparedness-response-recovery/covid-19-provincial-support/self-isolation-on-return" target="_blank" rel="noopener noreferrer">
+            &nbsp;self-isolation plan.
+          </a>
         </Typography>
 
         {/* Section #2 */}
@@ -78,11 +82,15 @@ const LearnMore = () => {
           </a>
           is playing a significant role in supporting the public and has a FAQ about the coronavirus. If you have
           questions you can call <strong>811</strong> toll-free in BC, or for the deaf and hard of hearing, call 7-1-1.
-          Translation services are available in more than 130 languages. Ministry of
+          Translation services are available in more than 130 languages.
+          <br />
+          <br />
+          Ministry of
           Health has created a phone service to provide <strong>non-medical</strong> information about COVID-19,
           including the latest information on travel recommendations and social distancing. Information is available
           in more than 110 languages, 7:30 am – 8 pm daily.
           <ul><li><strong>BC Coronavirus Information Line: 1-888-COVID19 (1-888-268-4319) or via text message at 604-630-0300</strong></li></ul>
+          <br />
           The
           <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html" target="_blank" rel="noopener noreferrer">
             &nbsp;Public Health Agency of Canada/ Agence de la santé publique du Canada&nbsp;
@@ -103,10 +111,15 @@ const LearnMore = () => {
             &nbsp;BC COVID-19 Symptom Self-Assessment Tool&nbsp;
           </a>
           which will help determine if
-          you may need further assessment or testing for COVID-19.   Testing can be done at Urgent and Primary Care
+          you may need further assessment or testing for COVID-19.
+          <br />
+          <br />
+          Testing can be done at Urgent and Primary Care
           Centres. Some primary care doctors may do testing; call first to check, and to allow them to prepare for you.
           Do not go to hospital emergency departments just for testing, only if you are having severe symptoms that
           require immediate medical assistance.
+          <br />
+          <br />
           <a href="http://www.bccdc.ca/health-info/diseases-conditions/covid-19" target="_blank" rel="noopener noreferrer">
             &nbsp;The BC Centre for Disease Control&nbsp;
           </a>
@@ -126,7 +139,10 @@ const LearnMore = () => {
             &nbsp;Department of Finance Canada&nbsp;
           </a>
           announced new economic measures to support Canadian workers and businesses
-          during this time of uncertainty. For Canadians without paid sick leave (or similar workplace accommodation)
+          during this time of uncertainty.
+          <br />
+          <br />
+          For Canadians without paid sick leave (or similar workplace accommodation)
           who are sick, quarantined, or forced to stay home to care for children, the Government is:
           <ul>
             <li>
@@ -137,6 +153,7 @@ const LearnMore = () => {
               Waiving the requirement to provide a medical certificate to access EI.
             </li>
           </ul>
+          <br />
           <p>
             Contact the dedicated toll-free number if in quarantine and seeking to waive the waiting period: 1-833-381-2725, 1-800-529-3742 (TTY).
             <br />
@@ -145,6 +162,7 @@ const LearnMore = () => {
               &nbsp;online application.&nbsp;
             </a>
           </p>
+          <br />
           <strong>Canada Emergency Support Response Benefit (CERB)</strong> (applications open April 6, 2020) will provide
           a taxable benefit of $2000 a month (paid in $500 per week installments) for up to four months to:
           <ul>
@@ -175,7 +193,7 @@ const LearnMore = () => {
               <a href="https://www.canada.ca/en/employment-social-development/services/my-account.html" target="_blank" rel="noopener noreferrer">
                 &nbsp;My Service Canada&nbsp;
               </a>
-              or by phone: <strong>1-800-959-2019</strong>. 
+              or by phone: <strong>1-800-959-2019</strong>.
               There is no waiting period; direct deposit payments will be made within three business days and cheques within 10 days to eligible applicants.
             </li>
             <li>
@@ -185,19 +203,52 @@ const LearnMore = () => {
               The benefit will be available until September 26, 2020. Applications accepted no later than December 2, 2020.
             </li>
           </ul>
+          <br />
           <p>
-          <strong>Goods and Services Tax Credit (GSTC)</strong>(proposed for early May) will provide a one-time special
-          payment which will double the maximum annual GSTC payment amounts for the 2019–20 benefit year. The average
-          boost to income for those benefitting from this measure will be close to $400 for single individuals and
-          close to $600 for couples. For families receiving the <strong>Canada Child Benefit (CCB),</strong> the
-          government is increasing maximum annual payment amounts for the 2019–20 benefit year by $300 per
-          child. The overall increase for families receiving CCB will be approximately $550 on average; families will
-          receive an extra $300 per child as part of their May payment. The Province of BC has also announced several
-          financial supports:   The <strong>BC Emergency Benefit for Workers</strong> will provide a one-time, tax-free $1000 payment
-          to workers who have lost income due to COVID-19. BC residents who receive federal EI, or the new federal
-          Emergency Care Benefit are eligible. Applications will open early April 2020. Payment will be made in May 2020.
-          Increasing and expanding the <strong>BC Climate Action Tax Credit</strong> for moderate to low-income families in July 2020.
-          Eligible adults will receive up to $218 (increased from $174) and children will receive $64 (increased from $51).
+            <strong>Goods and Services Tax Credit (GSTC)</strong> (proposed for early May) will provide a one-time special
+            payment which will double the maximum annual GSTC payment amounts for the 2019–20 benefit year. The average
+            boost to income for those benefitting from this measure will be close to $400 for single individuals and
+            close to $600 for couples.
+            <br />
+            <br />
+            For families receiving the <strong>Canada Child Benefit (CCB),</strong> the
+            government is increasing maximum annual payment amounts for the 2019–20 benefit year by $300 per
+            child. The overall increase for families receiving CCB will be approximately $550 on average; families will
+            receive an extra $300 per child as part of their May payment.
+            <br />
+            <br />
+            The Province of BC has also announced several financial supports:
+            <br />
+            <br />
+            <strong>BC Emergency Benefit for Workers (BCEBW)</strong> (apply online May 1, 2020; apply by phone May 4, 2020)
+            will provide a one-time, tax-free $1000 payment to workers who have lost income due to COVID-19. To be eligible,
+            you must:
+            <ul>
+              <li>
+                Have been a resident of BC on March 14, 2020
+              </li>
+              <li>
+                Meet eligibility requirements for the Canadian Emergency Response Benefit (CERB)
+              </li>
+              <li>
+                Have been approved for the Canadian Emergency Response Benefit
+              </li>
+              <li>
+                Be at least 14 years old on the date you apply
+              </li>
+              <li>
+                Have filed, or agree to file, a 2019 BC income tax return
+              </li>
+              <li>
+                Not be receiving provincial income assistance or disability assistance
+              </li>
+              <li>
+                Starting May 1, call <strong>778-309-4630</strong> or <strong>1-855 955-3545</strong> (Toll-free) from 8:30 am to 4:30 pm Monday to Friday
+              </li>
+            </ul>
+
+            Increasing and expanding the <strong>BC Climate Action Tax Credit</strong> for moderate to low-income families in July 2020.
+            Eligible adults will receive up to $218 (increased from $174) and children will receive $64 (increased from $51).
           </p>
         </Typography>
 
@@ -247,6 +298,25 @@ const LearnMore = () => {
         </Typography>
 
         {/* Section #7 */}
+        <Typography component="h1" className={classes.title}>
+          For post-secondary students (details TBA):
+        </Typography>
+        <Typography className={classes.description}>
+          <ul>
+            <li>
+              <strong>Canadian Emergency Student Benefit</strong> will provide $1,250 per month for eligible students
+              from May through August 2020, and $1,750 for students with dependents and those with permanent disabilities.
+              Available to post-secondary students and recent graduates who are ineligible for CERB or for EI, but who
+              are unable to find full-time employment or unable to work due to COVID-19.
+            </li>
+            <li>
+              <strong>Canada Student Service Grant</strong> will provide up to $5,000 to support student&apos;s post-secondary
+              education costs in the fall for those who contribute to COVID-19 service activities.
+            </li>
+          </ul>
+        </Typography>
+
+        {/* Section #8 */}
         <Typography component="h1" className={classes.title}>
           Additional Information
         </Typography>
