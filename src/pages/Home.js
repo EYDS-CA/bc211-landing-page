@@ -7,7 +7,6 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
-import { useHistory } from 'react-router-dom';
 
 import IconRegister from '@/assets/icon_register.svg';
 import heroWrapper from '@/assets/181144228-1.jpg';
@@ -92,7 +91,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const classes = useStyles();
-  const history = useHistory();
 
   const handleCTAClick = () => {
     gtag('event', 'Click', { event_category: 'CTA', event_label: 'Continue' });
@@ -106,7 +104,7 @@ const Home = () => {
 
   const handleLearnMoreClick = () => {
     gtag('event', 'Click', { event_category: 'CTA', event_label: 'Coronavirus' });
-    history.push('/coronavirus-2019-outbreak');
+    window.location.href = 'http://www.bc211.ca/coronavirus-2019-outbreak';
   };
 
   return (
@@ -129,9 +127,37 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Card className={classes.card} variant="outlined">
               <CardContent>
+                <img width="40" height="40" src={IconPhone}/>
+                <Typography className={classes.cardTitle}>
+                2-1-1 Help Starts Here 
+                </Typography>
+                <Typography className={classes.cardContent}>
+                  Life isn&apos;t always easy, but finding help can be. 211 connects you to programs and services in your community.
+                  <br />
+                  Free | Confidential | 24/7 | 150+ languages
+                  <br />
+                  Dial | Text | Chat
+                </Typography>
+              </CardContent>
+              <CardActions className={classes.cardActions}>
+                <Button
+                  className={classes.ctaButton}
+                  color="inherit"
+                  variant="contained"
+                  onClick={handleCTAClick}
+                >
+                  Search 211 Resources Online
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Card className={classes.card} variant="outlined">
+              <CardContent>
                 <img width="40" height="40" src={IconRegister}/>
                 <Typography className={classes.cardTitle}>
-                  Register for NEW Safe Seniors, Strong Communities Program
+                  Register for Safe Seniors, Strong Communities Program
                 </Typography>
                 <Typography className={classes.cardContent}>
                   A program that matches seniors who need support with non-medical essentials, to volunteers in their community who are willing to help.
@@ -153,31 +179,6 @@ const Home = () => {
               </CardActions>
             </Card>
           </Grid>
-
-          <Grid item xs={12} md={6}>
-            <Card className={classes.card} variant="outlined">
-              <CardContent >
-                <img width="40" height="40" src={IconAlert}/>
-                <Typography className={classes.cardTitle}>
-                  Coronavirus Outbreak Information
-                </Typography>
-                <Typography className={classes.cardContent}>
-                  As of March 18, 2020, the Province of British Columbia has
-                  declared a state of emergency to support response to COVID-19.
-                </Typography>
-              </CardContent>
-              <CardActions className={classes.cardActions}>
-                <Button
-                  className={classes.ctaButton}
-                  color="inherit"
-                  variant="contained"
-                  onClick={handleLearnMoreClick}
-                >
-                  Learn more
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
         </Grid>
       </Container>
 
@@ -186,18 +187,25 @@ const Home = () => {
         <Grid container justify="center">
           <Card className={classes.card} variant="outlined">
             <CardContent>
-              <img width="40" height="40" src={IconPhone} />
+              <img width="40" height="40" src={IconAlert}/>
               <Typography className={classes.cardTitle}>
-                Family and Friend Caregiver Support Line
-              </Typography>
-              <Typography className={classes.cardTitle}>
-                1-877-520-3267
+                Coronavirus Outbreak Information
               </Typography>
               <Typography className={classes.cardContent}>
-                Family Caregivers of BC is here to support unpaid family and friend caregivers.
-                Call them at 1-877-520-3267 or visit their website at <a href="https://www.familycaregiversbc.ca">www.familycaregiversbc.ca</a>.
+                As of March 18, 2020, the Province of British Columbia has
+                declared a state of emergency to support response to COVID-19.
               </Typography>
             </CardContent>
+            <CardActions className={classes.cardActions}>
+              <Button
+                className={classes.ctaButton}
+                color="inherit"
+                variant="contained"
+                onClick={handleLearnMoreClick}
+              >
+                Learn more
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
       </Container>
