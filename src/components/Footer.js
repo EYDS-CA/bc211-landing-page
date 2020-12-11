@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import uWay from '@/assets/uway-canada-logo-horiz__cmyk.png';
 import two11Logo from '@/assets/211-logo.png';
+import govLogo from '@/assets/bcgov.png';
 
 
 const useStyles = makeStyles(() => ({
@@ -49,7 +50,7 @@ const Footer = () => {
 
       {/** Footer */}
       <div className={classes.footerWrapper}>
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <Grid container justify="center" alignItems="center" spacing={8}>
             <Grid item>
               <img
@@ -65,6 +66,13 @@ const Footer = () => {
                 src={uWay}
                 width="326"
                 height="97"
+              />
+            </Grid>
+            <Grid item>
+              <img
+                src={govLogo}
+                width="277"
+                height="131"
               />
             </Grid>
           </Grid>
