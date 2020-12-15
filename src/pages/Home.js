@@ -7,6 +7,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
+import { isMobile } from 'react-device-detect';
 
 import IconRegister from '@/assets/icon_register.svg';
 import heroWrapper from '@/assets/181144228-1.jpg';
@@ -182,8 +183,7 @@ const Home = () => {
         </Grid>
       </Container>
 
-      {/** Caregiver support line */}
-      <Container className={classes.ctaWrapper} maxWidth="sm">
+      {!isMobile && <Container className={classes.ctaWrapper} maxWidth="sm">
         <Grid container justify="center">
           <Card className={classes.card} variant="outlined">
             <CardContent>
@@ -208,7 +208,7 @@ const Home = () => {
             </CardActions>
           </Card>
         </Grid>
-      </Container>
+      </Container>}
 
       {/** CTA */}
       <Container className={classes.ctaWrapper} maxWidth="sm">
