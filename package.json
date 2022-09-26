@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@material-ui/core": "4.11.2",
-    "pm2": "4.5.1",
+    "pm2": "5.2.0",
     "react": "16.14.0",
     "react-device-detect": "1.15.0",
     "react-dom": "16.14.0",
